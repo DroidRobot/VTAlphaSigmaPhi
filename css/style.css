@@ -403,6 +403,33 @@ Separator
     background: #ff6863;
 }
 
+
+.separator_statistics{
+    width:30px;
+    height:2px;
+    margin:20px auto;
+    background: #ff6863;
+    display: block;
+}
+
+.separator_statistics_vertical{
+    width:110px;
+    height:2px;
+    margin:20px auto;
+    background: #ff6863;
+    display: none;
+}
+
+@media (max-width: 991px){
+    .separator_statistics_vertical{
+        display: block;
+    }
+
+    .separator_statistics{
+        display: none;
+    }
+}
+
 /*
 Button
 */
