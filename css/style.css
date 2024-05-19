@@ -750,7 +750,7 @@ textarea::-ms-input-placeholder{
 
 /*for image bg*/
 /*.img-bg{
-  background: url(../images/home-msg.jpg) no-repeat center top fixed;
+  background: url(../home-msg.jpg) no-repeat center top fixed;
   background-size
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -1047,7 +1047,7 @@ Nav Menu style
 Home Section style
 ==================*/
 .home{
-    background: url(../images/background/AsigSpringFormals2024.jpg) no-repeat bottom center;
+    background: url(../background/AsigSpringFormals2024.jpg) no-repeat bottom center;
     background-size: cover;
     position: relative;
 }
@@ -1078,7 +1078,7 @@ Home Section style
 Rush Home Section style
 ==================*/
 .rush_home{
-    background: url(../images/background/hoedown_partial_blur_2024.jpg) no-repeat bottom center;
+    background: url(../background/hoedown_partial_blur_2024.jpg) no-repeat bottom center;
     background-size: cover;
     position: relative;
 }
@@ -1224,7 +1224,7 @@ FAQ Page
 Video Section style
 ======================*/
 .video{
-    background: url(../images/background/video.jpg) no-repeat center center;
+    background: url(../background/video.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -1347,7 +1347,7 @@ Impress section style
 ========================*/
 
 .impress{
-    background:url(../images/background/work-together.jpg) no-repeat center center;
+    background:url(../background/work-together.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -1566,7 +1566,7 @@ RUSH section style
 Testimonial Section style
 =======================*/
 .testimonial{
-    background: url(../images/background/testimonial_background_blurred.jpg) no-repeat bottom center;
+    background: url(../background/testimonial_background_blurred.jpg) no-repeat bottom center;
     background-size: cover;
     position: relative;
 }
@@ -1767,7 +1767,7 @@ Maps Section style
 =====================*/
 
 .main_maps{
-    background: url(../images/maps.jpg) no-repeat center center;
+    background: url(../maps.jpg) no-repeat center center;
     position: relative;
     width:100%;
     overflow: hidden;
