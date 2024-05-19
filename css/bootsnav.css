@@ -703,9 +703,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         display: block;
     }
 
-    nav.navbar.bootsnav.navbar-fixed .logo-display{
-        display: none;
-    }
+    
 
     nav.navbar.bootsnav.navbar-fixed .logo-scrolled{
         display: block;
@@ -1257,6 +1255,10 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     .top-search .container{
         padding: 0 45px;
+    }
+	
+    nav.navbar.bootsnav.navbar-fixed .logo-display{
+        display: none;
     }
     
     /* Navbar full Responsive
