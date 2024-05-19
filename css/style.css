@@ -1047,7 +1047,7 @@ Nav Menu style
 Home Section style
 ==================*/
 .home{
-    background: url(/background/AsigSpringFormals2024.jpg) no-repeat bottom center;
+    background: url(background/AsigSpringFormals2024.jpg) no-repeat bottom center;
     background-size: cover;
     position: relative;
 }
