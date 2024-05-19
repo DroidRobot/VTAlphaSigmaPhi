@@ -430,6 +430,21 @@ Separator
     }
 }
 
+
+.separator_philanthropy_vertical{
+    width:110px;
+    height:2px;
+    margin:20px auto;
+    background: #ff6863;
+    display: block;
+}
+
+@media (min-width: 768px){
+    .separator_philanthropy_vertical{
+        display: none;
+    }
+}
+
 /*
 Button
 */
