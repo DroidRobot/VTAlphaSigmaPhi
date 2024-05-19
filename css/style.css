@@ -1698,7 +1698,7 @@ Brand Section style
 }
 
 .cbrand_item img{
-    width: 70%;
+    width: fit-content;
     margin: 20px;
 }
 
@@ -1706,6 +1706,10 @@ Brand Section style
     width:100%;
 }
 
+@media (max-width: 768px){
+    .cbrand_item img.shatterproof{
+        max-width: 250px;
+    }
 
 /*
 Subscribe Section style
