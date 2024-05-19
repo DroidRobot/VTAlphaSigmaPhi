@@ -190,6 +190,7 @@ img {
 
 .logo.logo-scrolled{
     max-width: 150px;
+    display: none;
 }
 
 .img-shatterproof{
