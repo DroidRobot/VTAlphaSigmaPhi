@@ -1047,7 +1047,7 @@ Nav Menu style
 Home Section style
 ==================*/
 .home{
-    background: /background/AsigSpringFormals2024.jpg no-repeat bottom center;
+    background: url(/background/AsigSpringFormals2024.jpg) no-repeat bottom center;
     background-size: cover;
     position: relative;
 }
@@ -1221,33 +1221,6 @@ FAQ Page
 
 
 /*
-Video Section style
-======================*/
-.video{
-    background: url(/background/video.jpg) no-repeat center center;
-    background-size: cover;
-    position: relative;
-}
-.main_video{
-    display: block;
-    /*z-index: 2;*/
-    /*position: relative;*/
-}
-.main_video i,
-.main_video span.fa,
-.main_video span.icon{
-    color:#fff;
-    font-size:3rem;
-    border:2px solid #fff;
-    width:80px;
-    height: 80px;
-    line-height: 80px;
-    border-radius: 50%;
-    position: relative;
-}
-
-
-/*
 Featured section style
 ========================*/
 .main_featured .head_title{
@@ -1340,24 +1313,6 @@ service section style
 }
 .service_item h6{}
 .service_item p{}
-
-
-/*
-Impress section style
-========================*/
-
-.impress{
-    background:url(/background/work-together.jpg) no-repeat center center;
-    background-size: cover;
-    position: relative;
-}
-.main_impress h2{
-    font-size:2.286rem
-}
-.impress_btns .btn{
-    padding: 1rem 4rem;
-}
-
 
 
 /*
