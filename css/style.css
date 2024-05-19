@@ -1085,10 +1085,21 @@ Rush Home Section style
 .rush_main_home{
     overflow: hidden;
     padding-top: 300px;
-    padding-bottom: 230px;
+    padding-bottom: 180px;
     position: relative;
     z-index: 1;
 }
+@media (min-width: 472px){
+    .rush_main_home{
+         padding-bottom: 267px;
+    }
+}
+@media (max-width: 422px){
+    .rush_main_home{
+         padding-bottom: 178px;
+    }
+}
+
 .rush_home_text h1{
     font-family: 'Bitter', sans-serif;
     font-size:4.286rem;
