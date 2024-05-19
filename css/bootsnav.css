@@ -520,12 +520,6 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
 }
 
-@media (min-width 992px){
-    nav.navbar.bootsnav.navbar-fixed .logo-display{
-        display: none;
-    }
-}
-
 @media (min-width: 1024px) {
     /* General Navbar
     =================================*/
@@ -709,7 +703,9 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         display: block;
     }
 
-    
+    nav.navbar.bootsnav.navbar-fixed .logo-display{
+        display: none;
+    }
 
     nav.navbar.bootsnav.navbar-fixed .logo-scrolled{
         display: block;
