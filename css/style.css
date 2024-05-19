@@ -750,7 +750,7 @@ textarea::-ms-input-placeholder{
 
 /*for image bg*/
 /*.img-bg{
-  background: url(../home-msg.jpg) no-repeat center top fixed;
+  background: url(/home-msg.jpg) no-repeat center top fixed;
   background-size
   -moz-background-size: cover;
   -webkit-background-size: cover;
