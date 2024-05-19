@@ -1058,6 +1058,14 @@ Home Section style
     position: relative;
     z-index: 1;
 }
+
+@media (min-width: 1237px){
+    .main_home{
+        padding-top: 200px;
+        padding-bottom: 300px;
+    }
+}
+
 .home_text h1{
     font-family: 'Bitter', sans-serif;
     font-size:4.286rem;
