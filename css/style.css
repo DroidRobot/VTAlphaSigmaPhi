@@ -1078,7 +1078,7 @@ Home Section style
 Rush Home Section style
 ==================*/
 .rush_home{
-    background: url(..background/hoedown_partial_blur_2024.jpg) no-repeat bottom center;
+    background: url(../background/hoedown_partial_blur_2024.jpg) no-repeat bottom center;
     background-size: cover;
     position: relative;
 }
