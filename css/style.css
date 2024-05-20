@@ -823,6 +823,12 @@ textarea::-ms-input-placeholder{
     font-size:2.286rem;
     color:#1a1a1a;
 }
+
+@media (max-width: 450px){
+    .head_title h2{
+     font-size: 2rem;
+    }
+}
 .head_title p{
     font-family: 'Bitter', sans-serif;
     font-weight: 400;
@@ -1095,13 +1101,13 @@ Home Section style
 }
 .main_home{
     overflow: hidden;
-    padding-top: 180px;
-    padding-bottom: 200px;
+    padding-top: 210px;
+    padding-bottom: 300px;
     position: relative;
     z-index: 1;
 }
 
-@media (min-width: 1237px){
+@media (max-width: 992px){
     .main_home{
         padding-top: 200px;
         padding-bottom: 300px;
