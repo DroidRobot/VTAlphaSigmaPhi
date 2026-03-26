@@ -1933,3 +1933,248 @@ Footer Section style
     text-decoration: none;
 
 }
+
+
+/* ========================================
+   MODERNIZED DESIGN ADDITIONS
+   ======================================== */
+
+/* Hero gradient overlay */
+.home .overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.0) 100%);
+}
+
+/* Scroll-down indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.scroll-indicator a {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.4rem;
+    display: block;
+    transition: color 0.2s;
+}
+.scroll-indicator a:hover {
+    color: #ff6863;
+}
+.scroll-indicator a i {
+    animation: bounce-down 1.8s ease-in-out infinite;
+    display: block;
+}
+@keyframes bounce-down {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(9px); }
+}
+
+/* Nav transparent-to-solid on scroll */
+.navbar.bootsnav {
+    transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.navbar.bootsnav.nav-transparent {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+    box-shadow: none !important;
+}
+.navbar.bootsnav.nav-transparent .navbar-nav > li > a {
+    color: rgba(255,255,255,0.92) !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.45);
+}
+.navbar.bootsnav.nav-transparent .navbar-nav > li > a:hover {
+    color: #fff !important;
+}
+.navbar.bootsnav.nav-scrolled {
+    background: rgba(255,255,255,0.97) !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
+}
+.navbar.bootsnav.nav-scrolled .navbar-nav > li > a {
+    color: #333 !important;
+    text-shadow: none;
+}
+
+/* Value cards (replaces accordion) */
+.values-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.value-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 13px 15px;
+    border: 1px solid #ebebeb;
+    border-left: 3px solid #ff6863;
+    background: #fff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.value-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    background: #fff8f8;
+}
+.value-card-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #ff6863;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+    margin-right: 14px;
+    margin-top: 2px;
+}
+.value-card-body h6 {
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+    font-size: 0.88rem;
+}
+.value-card-body p {
+    font-size: 0.83rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.45;
+}
+
+/* Stats dark banner */
+.stats-dark-bg {
+    background: #1a1a1a;
+    padding: 50px 0;
+    margin-top: 30px;
+}
+.stats-dark-bg .skill_bottom_item h2,
+.stats-dark-bg .skill_bottom_item h5,
+.stats-dark-bg .skill_bottom_item em {
+    color: #fff;
+}
+.stats-dark-bg .separator_statistics,
+.stats-dark-bg .separator_statistics_vertical {
+    background: #ff6863;
+}
+.stat-icon {
+    font-size: 2.1rem;
+    color: #ff6863;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Philanthropy hover cards */
+.philanthropy-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0 50px;
+}
+.philanthropy-card {
+    width: 178px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    padding: 25px 15px 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.philanthropy-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+    border-color: #ff6863;
+}
+.philanthropy-card a {
+    display: block;
+    color: inherit;
+}
+.philanthropy-card-logo {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+.philanthropy-card-logo img {
+    max-height: 62px;
+    max-width: 145px;
+    object-fit: contain;
+}
+.philanthropy-card-badge {
+    background: #ff6863;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 0.73rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+/* Testimonial overlay + quote mark */
+.testimonial .overlay {
+    background: rgba(0, 0, 0, 0.52);
+}
+.main_testimonial .testimonial_item {
+    position: relative;
+}
+.main_testimonial .testimonial_item::before {
+    content: '\201C';
+    font-size: 7rem;
+    color: rgba(255, 104, 99, 0.4);
+    position: absolute;
+    top: -28px;
+    left: 4%;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* News / Instagram CTA */
+.instagram-cta {
+    text-align: center;
+    padding: 10px 20px 10px;
+}
+.instagram-cta .instagram-icon {
+    font-size: 3.8rem;
+    color: #ff6863;
+    display: block;
+    margin-bottom: 15px;
+}
+.instagram-cta h4 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+.instagram-cta p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Contact form result messages */
+.contact-result {
+    margin-top: 15px;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 2px;
+}
+.contact-success {
+    background: rgba(255, 104, 99, 0.18);
+    border: 1px solid #ff6863;
+    color: #fff;
+}
+.contact-error {
+    background: rgba(180, 0, 0, 0.2);
+    border: 1px solid #cc2222;
+    color: #fff;
+}

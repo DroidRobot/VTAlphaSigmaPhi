@@ -92,7 +92,7 @@ jQuery(document).ready(function ($) {
         prevArrow: "<i class='fa fa-angle-left nextprevleft'></i>",
         nextArrow: "<i class='fa fa-angle-right nextprevright'></i>",
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 5000
     });
 
 
@@ -189,6 +189,65 @@ jQuery(document).ready(function ($) {
 
 
   
+
+    // Nav transparent-to-solid on scroll
+    $('nav.navbar').addClass('nav-transparent');
+    $(window).on('scroll.nav', function () {
+        if ($(this).scrollTop() > 80) {
+            $('nav.navbar').addClass('nav-scrolled').removeClass('nav-transparent');
+            $('.logo-display').hide();
+            $('.logo-scrolled').show();
+        } else {
+            $('nav.navbar').removeClass('nav-scrolled').addClass('nav-transparent');
+            $('.logo-display').show();
+            $('.logo-scrolled').hide();
+        }
+    });
+
+
+    // Contact form AJAX submission
+    $('#contact-form').on('submit', function (e) {
+        e.preventDefault();
+        var $form   = $(this);
+        var $btn    = $('#contact-submit');
+        var $result = $('#contact-result');
+
+        $btn.prop('disabled', true).text('SENDING...');
+        $result.hide();
+
+        $.ajax({
+            type: 'POST',
+            url: 'https://api.web3forms.com/submit',
+            data: $form.serialize(),
+            dataType: 'json',
+            success: function (response) {
+                if (response.success) {
+                    $result
+                        .removeClass('contact-error')
+                        .addClass('contact-success')
+                        .html('<i class="fa fa-check"></i> Message sent! We\'ll get back to you within 48 hours.')
+                        .fadeIn();
+                    $form[0].reset();
+                } else {
+                    $result
+                        .removeClass('contact-success')
+                        .addClass('contact-error')
+                        .html('<i class="fa fa-times"></i> Something went wrong. Please try again.')
+                        .fadeIn();
+                }
+                $btn.prop('disabled', false).text('SEND MESSAGE');
+            },
+            error: function () {
+                $result
+                    .removeClass('contact-success')
+                    .addClass('contact-error')
+                    .html('<i class="fa fa-times"></i> Could not send message. Please check your connection and try again.')
+                    .fadeIn();
+                $btn.prop('disabled', false).text('SEND MESSAGE');
+            }
+        });
+    });
+
 
     //End
 
